@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 55061704}
   - component: {fileID: 55061703}
   - component: {fileID: 55061702}
+  - component: {fileID: 55061708}
   m_Layer: 0
   m_Name: FreeLook Camera
   m_TagString: Untagged
@@ -434,12 +435,35 @@ Transform:
   m_GameObject: {fileID: 55061701}
   serializedVersion: 2
   m_LocalRotation: {x: 0.13870122, y: 0.000000029514265, z: -0.000000004133619, w: 0.9903343}
-  m_LocalPosition: {x: 3.55425, y: 0.34000003, z: -11.93194}
+  m_LocalPosition: {x: 0.37696004, y: 1.79751, z: -6.67151}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 483483719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &55061708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55061701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60afdeed58a6f794da4eab11bea92171, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInput
+  orientation: {fileID: 555702404}
+  player: {fileID: 1523387941}
+  playerObj: {fileID: 473188448}
+  rb: {fileID: 1523387940}
+  rotationSpeed: 7
+  playerHeight: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  groundDrag: 0
+  moveSpeed: 0
 --- !u!1 &90277330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,6 +1382,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473188447}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &483483718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 483483719}
+  m_Layer: 0
+  m_Name: CamHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &483483719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483483718}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.17729, y: -1.45751, z: -5.26043}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 55061707}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555702403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,7 +1472,7 @@ Transform:
   m_GameObject: {fileID: 765394054}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.74, y: 14.14, z: 1.87}
+  m_LocalPosition: {x: -14.63, y: 14.14, z: 13.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1543,7 +1599,7 @@ Transform:
   m_GameObject: {fileID: 948588990}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.51, y: 0, z: 3.08}
+  m_LocalPosition: {x: -14.6, y: 0, z: 15.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2245,13 +2301,13 @@ MonoBehaviour:
   player: {fileID: 1523387941}
   playerObj: {fileID: 473188448}
   rb: {fileID: 1523387940}
+  rotationSpeed: 7
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
   groundDrag: 5
   moveSpeed: 7
-  rotationSpeed: 7
 --- !u!1 &1740576833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,13 +2728,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044254155}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 17.61, y: -0.83, z: -4.69}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.62, y: -0.83, z: 7.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2691,9 +2747,9 @@ SceneRoots:
   - {fileID: 1276005068}
   - {fileID: 1740576837}
   - {fileID: 1523387941}
-  - {fileID: 55061707}
   - {fileID: 2044254157}
   - {fileID: 1500061998}
   - {fileID: 1389091502}
   - {fileID: 90277333}
   - {fileID: 120130042}
+  - {fileID: 483483719}

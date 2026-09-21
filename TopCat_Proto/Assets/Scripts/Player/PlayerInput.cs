@@ -8,6 +8,8 @@ public class PlayerInput : MonoBehaviour
     public Transform playerObj;
     public Rigidbody rb;
 
+    public float rotationSpeed;
+
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
@@ -23,8 +25,6 @@ public class PlayerInput : MonoBehaviour
     float horizontalInput;
     float verticalInput;
 
-    public float rotationSpeed;
-
 
     private void Start()
     {
@@ -37,19 +37,6 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        //ground checks
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
-
-        //handle drag in movement
-        if (grounded)
-        {
-            rb.linearDamping = groundDrag;
-        }
-        else
-        {
-            rb.linearDamping = 0;
-        }
-
         //rotate orientation
         Vector3 viewDir = player.position - new Vector3(transform.position.x, player.position.y, transform.position.z);
         orientation.forward = viewDir.normalized;
@@ -62,6 +49,19 @@ public class PlayerInput : MonoBehaviour
         if(inputDir != Vector3.zero)
         {
             playerObj.forward = Vector3.Slerp(playerObj.forward, inputDir.normalized, Time.deltaTime * rotationSpeed);
+        }
+
+        //ground checks
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+
+        //handle drag in movement
+        if (grounded)
+        {
+            rb.linearDamping = groundDrag;
+        }
+        else
+        {
+            rb.linearDamping = 0;
         }
 
         MyInput();
