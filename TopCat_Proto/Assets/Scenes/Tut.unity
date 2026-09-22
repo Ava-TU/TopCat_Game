@@ -516,8 +516,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99046620}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.20106587, y: -1.6997098e-11, z: 3.4887852e-12, w: 0.9795777}
-  m_LocalPosition: {x: -4.9966803, y: 4.0777, z: -12.44542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -9.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -903,7 +903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
   clickToMoveCamera: 0
-  canZoom: 1
+  canZoom: 0
   sensitivity: 3
   cameraLimit: {x: -45, y: 40}
 --- !u!4 &338616997
@@ -915,7 +915,7 @@ Transform:
   m_GameObject: {fileID: 338616995}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.55093, y: -2.7377, z: 0.51348}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
