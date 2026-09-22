@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MiceScript : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,13 +13,4 @@ public class MiceScript : MonoBehaviour
     {
         
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("You collected a mouse!");
-        }
-    }
-
 }
