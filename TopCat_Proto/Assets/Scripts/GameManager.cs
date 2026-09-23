@@ -27,16 +27,19 @@ public class GameManager : MonoBehaviour
         if (miceNeeded.mice >= bobbyBigRequirements)
         {
             canBribeBobby = true;
+            Debug.Log("Can now bribe Bobby Big");
         }
         
         if (miceNeeded.mice >= gusRequirements)
         {
             canBribeGus = true;
+            Debug.Log("Can now bribe Gus");
         }
 
         if (miceNeeded.mice >= minniesRequirements)
         {
             canBribeMinnie = true;
+            Debug.Log("Can now bribe Minnie");
         }
     }
 }
