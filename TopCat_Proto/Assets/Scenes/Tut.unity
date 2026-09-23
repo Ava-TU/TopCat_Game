@@ -363,6 +363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42efe48a65786c443afb79f2d8043d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MiceCollection
+  mice: 0
   miceText: {fileID: 800997827}
 --- !u!1 &90277330
 GameObject:
@@ -1477,6 +1478,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421736512}
   m_CullTransparentMesh: 1
+--- !u!1 &554662812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 554662813}
+  - component: {fileID: 554662814}
+  m_Layer: 0
+  m_Name: GM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &554662813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554662812}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.4068, y: -2.7377, z: 8.7958}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &554662814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554662812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd225aa28643ec4faa8f0da60984358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  miceNeeded: {fileID: 89527453}
+  bobbyBigRequirements: 4
+  gusRequirements: 2
+  minniesRequirements: 3
+  canBribeBobby: 0
+  canBribeGus: 0
+  canBribeMinnie: 0
 --- !u!1 &724727808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3322,3 +3374,4 @@ SceneRoots:
   - {fileID: 2067288305}
   - {fileID: 1310187270}
   - {fileID: 1561957094}
+  - {fileID: 554662813}

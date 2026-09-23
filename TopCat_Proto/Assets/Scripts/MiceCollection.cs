@@ -3,7 +3,7 @@ using TMPro;
 
 public class MiceCollection : MonoBehaviour
 {
-    private int mice = 0;
+    public int mice = 0;
 
     public TMP_Text miceText;
 
