@@ -1,9 +1,26 @@
 fileFormatVersion: 2
 guid: af1013161499df741ae12790953e4c2c
+AssetOrigin:
+  serializedVersion: 1
+  productId: 377016
+  packageName: Urban Props Pack
+  packageVersion: 1.0
+  assetPath: Assets/Urban_Props_Pack_Rozity/Models/SM_StreetLight_Modern_01.fbx
+  uploadId: 925114
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: e3f89a1bd3d5dfe43a9a8c253b3f0919, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 98cf94f41e1570846a9749168fde57b6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -108,10 +125,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 377016
-  packageName: Urban Props Pack
-  packageVersion: 1.0
-  assetPath: Assets/Urban_Props_Pack_Rozity/Models/SM_StreetLight_Modern_01.fbx
-  uploadId: 925114
